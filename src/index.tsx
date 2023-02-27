@@ -1,7 +1,9 @@
 import ReactDOM from 'react-dom/client';
+import Container from '@mui/material/Container';
 import { AppProviders } from 'appProviders/AppProviders';
-import App from './App';
 import '@fontsource/roboto';
+import App from './App';
+
 
 
 const root = ReactDOM.createRoot(
@@ -9,7 +11,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <AppProviders>
-    <App />
+    <Container maxWidth='xl'>
+      <App />
+    </Container>
   </AppProviders>
     
 );
