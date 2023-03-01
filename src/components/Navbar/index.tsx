@@ -9,7 +9,9 @@ const Navbar = () => {
 
   return (
     <MyAppBar elevation={0}>
-      <Toolbar>{isMobile ? <NavbarMobile /> : <NavbarDesktop />}</Toolbar>
+      <Toolbar>
+        {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
+      </Toolbar>
     </MyAppBar>
   );
 };

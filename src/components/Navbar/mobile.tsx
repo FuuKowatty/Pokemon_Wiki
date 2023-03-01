@@ -1,14 +1,36 @@
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { Typography } from '@mui/material';
+// import { Typography } from '@mui/material';
 import { Search } from '@mui/icons-material';
-import { SearchIconWrapper } from 'styles/Navbar';
+import CloseIcon from '@mui/icons-material/Close';
+import { SearchIconWrapper, StyledInputBase } from 'styles/Navbar';
+// import { useAppDispatch } from 'store/hooks';
+// import { toggleMobileSearchbar } from 'store';
+
+
 
 export const NavbarMobile = () => {
+
+  // const isActive = useAppSelector((state) => state.toggleSearchbar.isActive);
+  // const dispatch = useAppDispatch();
+
   return (
     <>
-      <IconButton
+    <IconButton>
+      <CloseIcon />
+    </IconButton>
+    <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+
+            />
+      </Search>
+
+      {/* <IconButton
         size="large"
         edge="start"
         color="inherit"
@@ -19,11 +41,14 @@ export const NavbarMobile = () => {
       <Typography
       
       >PokeWiki</Typography>
-      <Search sx={{ml: 'auto'}}>
-        <SearchIconWrapper>
+      <Search sx={{ml: 'auto'}} onClick={() => dispatch(toggleMobileSearchbar())}> bez search
+        <SearchIconWrapper
+          
+        >
           <SearchIcon />
         </SearchIconWrapper>
-      </Search>
+      </Search> */}
+      
     </>
   );
 };

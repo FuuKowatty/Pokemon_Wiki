@@ -5,6 +5,7 @@ import { AppProviders } from 'appProviders/AppProviders';
 import '@fontsource/roboto';
 import App from './App';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { AppBar } from '@mui/material';
+import { AppBar, InputBase } from '@mui/material';
 import { Colors } from 'styles/theme';
 
 export const MyAppBar = styled(AppBar)(() => ({
@@ -14,4 +14,8 @@ export const SearchIconWrapper = styled('div')(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  }));
+
+  export const StyledInputBase = styled(InputBase)(() => ({
+    color: Colors.primary
   }));
