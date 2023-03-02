@@ -1,11 +1,5 @@
+import { Box } from '@mui/system';
 
-const Home = () => {
-
-
-
-  return  (
-    <>siema</>
-  );
+export const Home = () => {
+  return <Box>siema</Box>;
 };
-
-export default Home;

@@ -5,5 +5,5 @@ export type AppProvidersProps = {
 };
 
 export type initialState = {
-  isActive: boolean
-}
+  isActive: boolean;
+};
