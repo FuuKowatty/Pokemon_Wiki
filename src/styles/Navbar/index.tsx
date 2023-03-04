@@ -5,7 +5,7 @@ import { Colors } from 'styles/theme';
 export const AppbarContainer = styled(Box)(() => ({
   display: 'flex',
   minHeight: '80px',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
   alignItems: 'center',
   gap: 5,
   padding: '2px 8px',
@@ -16,7 +16,6 @@ export const Search = styled(Box)(() => ({
   alignItems: 'center',
   justifyContent: 'space-between',
   background: Colors.primary,
-  width: '100%',
   display: 'flex',
   borderRadius: '20px',
 }));
