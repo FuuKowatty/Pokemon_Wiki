@@ -3,39 +3,41 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import {
-  AppbarContainer,
-  Search,
-  SearchIconWrapper,
-  StyledInputBase,
-} from 'styles/Navbar';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import { Search, StyledInputBase } from 'styles/Navbar';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { toggleMobileSearchbar } from 'store';
+import { Colors } from 'styles/theme';
+
 
 export const NavbarMobile = () => {
   const isActive = useAppSelector((state) => state.toggleSearchbar.isActive);
   const dispatch = useAppDispatch();
 
   return (
-    <AppbarContainer
-      component='header'
-    >
+    <>
       {isActive ? (
         <>
-          <IconButton
-            aria-label='close searchbar' 
-            color="inherit"
+                  <IconButton
             onClick={() => dispatch(toggleMobileSearchbar())}
           >
-            <CloseIcon />
+            <KeyboardBackspaceIcon color='primary' />
           </IconButton>
           <Search>
-            <SearchIconWrapper> 
-              {/* czemu nie ma tutaj cursor pointer? */}
+            <IconButton color='secondary'>
               <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase placeholder='Search...' />
+            </IconButton>
+            <StyledInputBase placeholder="Search..." />
+            <IconButton
+              aria-label="close searchbar"
+              color="primary"
+              sx={{position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)'}}
+            >
+              <CloseIcon fontSize='small' color='secondary'/>
+            </IconButton>
           </Search>
+
+          
         </>
       ) : (
         <>
@@ -49,14 +51,14 @@ export const NavbarMobile = () => {
           </IconButton>
           <Typography>PokeWiki</Typography>
           <IconButton
-            color='inherit'
+            color="inherit"
             sx={{ ml: 'auto' }}
             onClick={() => dispatch(toggleMobileSearchbar())}
           >
-              <SearchIcon />
+            <SearchIcon />
           </IconButton>
         </>
       )}
-    </AppbarContainer>
+    </>
   );
 };

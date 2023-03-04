@@ -4,32 +4,25 @@ import { Colors } from 'styles/theme';
 
 export const AppbarContainer = styled(Box)(() => ({
   display: 'flex',
-  marginTop: 4,
+  minHeight: '80px',
   justifyContent: 'center',
   alignItems: 'center',
+  gap: 5,
   padding: '2px 8px',
 }));
 
-export const Search = styled('div')(() => ({
+export const Search = styled(Box)(() => ({
   position: 'relative',
-  background: 'none',
-  marginRight: '10px',
-  marginLeft: '0',
-  width: '100%',
-}));
-
-export const SearchIconWrapper = styled('div')(() => ({
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
+  background: Colors.primary,
+  width: '100%',
+  display: 'flex',
+  borderRadius: '20px',
 }));
 
 export const StyledInputBase = styled(InputBase)(() => ({
-  color: Colors.primary,
+  color: Colors.secondary,
   width: '100%',
-  padding: '0 30px', 
-  
+  margin: 0
 }));
