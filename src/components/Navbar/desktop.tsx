@@ -1,11 +1,12 @@
-import Typography from '@mui/material/Typography';
+
+import { Logo } from 'styles/Navbar';
 import { SearchBar } from './searchbar';
 
 
 export const NavbarDesktop = () => {
   return (
     <>
-      <Typography>POKEWIKI</Typography>
+      <Logo>POKEWIKI</Logo>
       <SearchBar />
       
     </>

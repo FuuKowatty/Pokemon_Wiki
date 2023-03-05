@@ -1,11 +1,12 @@
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { Typography } from '@mui/material';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { toggleMobileSearchbar } from 'store';
+import { Logo } from 'styles/Navbar';
 import { SearchBar } from './searchbar';
+
 
 export const NavbarMobile = () => {
   const isActive = useAppSelector((state) => state.toggleSearchbar.isActive);
@@ -32,7 +33,7 @@ export const NavbarMobile = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography>POKEWIKI</Typography>
+          <Logo>POKEWIKI</Logo>
           <IconButton
             color="inherit"
             sx={{ ml: 'auto' }}
