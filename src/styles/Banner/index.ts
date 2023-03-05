@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import { Button, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import { lighten } from 'polished';
+import { darken } from 'polished';
 import { Colors } from 'styles/theme';
 
 
@@ -10,7 +10,6 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     justifyContent: 'center',
     width: '100%',
     height: '100%',
-    padding: '0px 0px',
     background: Colors.darker_blue,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
@@ -62,7 +61,8 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
   export const BannerShopButton = styled(Button)(({ theme }) => ({
     background: Colors.body_bg,
     '&:hover': {
-      background: lighten(0.05, Colors.primary),
+      background: Colors.primary,
+      color: darken(0.1 ,Colors.dark_blue)
     },
     width: '100%',
     padding: '20px 0px',
