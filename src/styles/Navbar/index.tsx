@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, InputBase } from '@mui/material';
+import { Box, InputBase, Typography } from '@mui/material';
 import { Colors } from 'styles/theme';
 
 export const AppbarContainer = styled(Box)(() => ({
@@ -24,4 +24,10 @@ export const StyledInputBase = styled(InputBase)(() => ({
   color: Colors.secondary,
   width: '100%',
   margin: 0
+}));
+
+export const Logo = styled(Typography)(() => ({
+  fontFamily: 'Golos Text',
+  fontSize: 25,
+  color: 'primary',
 }));
