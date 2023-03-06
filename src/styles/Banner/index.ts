@@ -9,7 +9,6 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
-    height: '100%',
     background: Colors.darker_blue,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
@@ -17,24 +16,30 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     },
   }));
   
-  export const BannerContent = styled(Box)(() => ({
+  export const BannerContent = styled(Box)(({theme}) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     maxWidth: 420,
     padding: '30px',
+    [theme.breakpoints.down('md')]: {
+      padding: '10px'
+    },
   }));
   
   export const BannerImage = styled('img')(({ src, theme }) => ({
     src: `url(${src})`,
-    width: '500px',
+    width: '600px',
+    [theme.breakpoints.down('lg')]: {
+      width: '450px',
+    },
     [theme.breakpoints.down('md')]: {
       width: '350px',
     },
     [theme.breakpoints.down('sm')]: {
-      width: '320px',
-      height: '300px',
+      maxWidth: '350px',
+      padding: '10px'
     },
   }));
   
@@ -42,8 +47,13 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     lineHeight: 1.5,
     fontSize: '72px',
     marginBottom: '20px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '57px',
+      lineHeight: 1.2
+    },
+    [theme.breakpoints.down('md')]: {
       fontSize: '42px',
+      lineHeight: 1.2
     },
   }));
   
@@ -55,6 +65,7 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
       lineHeight: 1.15,
       letterSpacing: 1.15,
       marginBottom: '1.5em',
+      maxWidth: '75%'
     },
   }));
   
@@ -69,7 +80,8 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     color: Colors.primary,
     fontWeight: 'bold',
     fontSize: '16px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '250px',
       padding: '10px 0px',
       fontSize: '14px',
     },
