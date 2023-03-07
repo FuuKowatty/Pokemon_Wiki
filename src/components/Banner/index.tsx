@@ -1,8 +1,7 @@
-import { useMediaQuery, useTheme, Typography } from '@mui/material';
+import { useMediaQuery, useTheme } from '@mui/material';
 import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTitle } from 'styles/Banner';
-import banner from 'assets/banner.png';
+import banner from 'assets/banner2.png';
 import banner_mobile from 'assets/banner_mobile.png';
-//sam bannner byl importowany
 
 export const Banner = () => {
 
@@ -13,13 +12,12 @@ export const Banner = () => {
     <BannerContainer >
     <BannerImage src={isMobile ? banner_mobile : banner} alt='banner-image'/>
     <BannerContent>
-      <Typography variant="h6">Huge Collection</Typography>
+      
       <BannerTitle variant="h2">
-        POKEWIKI
+        POKEMONS
       </BannerTitle>
       <BannerDescription variant="subtitle1">
-        Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo
-        tempor incididunt ut labore et dolore magna
+      POKEWIKI is library of pokemons based on pokeAPI. It enable you acces you to list of all pokemons, their specific info or some curio.
       </BannerDescription>
 
       <BannerShopButton color="secondary">Get Started</BannerShopButton>

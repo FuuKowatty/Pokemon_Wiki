@@ -44,27 +44,34 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
   }));
   
   export const BannerTitle = styled(Typography)(({ theme }) => ({
-    lineHeight: 1.5,
+    '&::before': {
+      content: '"THE WIKIPEDIA OF"',
+      fontSize: '24px',
+      color: Colors.standsOut,
+      fontWeight: 'bold',
+      display: 'block',
+      postion: 'absolute',
+      height: '1rem'
+
+    },
+    fontWeight: 'bold',
     fontSize: '72px',
-    marginBottom: '20px',
+    lineHeight: 1.25,
     [theme.breakpoints.down('lg')]: {
       fontSize: '57px',
-      lineHeight: 1.2
     },
     [theme.breakpoints.down('md')]: {
       fontSize: '42px',
-      lineHeight: 1.2
     },
   }));
   
   export const BannerDescription = styled(Typography)(({ theme }) => ({
     lineHeight: 1.25,
     letterSpacing: 1.25,
-    marginBottom: '3em',
+    padding: '30px 0',
     [theme.breakpoints.down('md')]: {
       lineHeight: 1.15,
       letterSpacing: 1.15,
-      marginBottom: '1.5em',
       maxWidth: '75%'
     },
   }));

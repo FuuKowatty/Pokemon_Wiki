@@ -17,6 +17,7 @@ export const Search = styled(Box)(() => ({
   justifyContent: 'space-between',
   background: Colors.primary,
   display: 'flex',
+  boxShadow: `inset 0 0 3px ${Colors.secondary}`,
   borderRadius: '20px',
 }));
 

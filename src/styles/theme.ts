@@ -6,6 +6,7 @@ export const Colors = {
   body_bg: '#001A38',
   darker_blue: '#00224E',
   dark_blue: '#003367',
+  standsOut: '#FAD61D'
 };
 
 export const theme = createTheme({
@@ -17,4 +18,7 @@ export const theme = createTheme({
       main: Colors.secondary,
     },
   },
+  components: {
+
+  }
 });
