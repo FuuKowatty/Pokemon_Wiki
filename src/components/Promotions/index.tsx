@@ -3,7 +3,6 @@ import { Box } from '@mui/system';
 import { Slide } from '@mui/material';
 import { MessageText, PromotionsContainer } from 'styles/Promotions/index';
 
-
 const messages = [
   '20% off on your first order!',
   'Summer sale starts now, visit any store.',

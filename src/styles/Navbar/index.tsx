@@ -24,7 +24,7 @@ export const Search = styled(Box)(() => ({
 export const StyledInputBase = styled(InputBase)(() => ({
   color: Colors.secondary,
   width: '100%',
-  margin: 0
+  margin: 0,
 }));
 
 export const Logo = styled(Typography)(() => ({

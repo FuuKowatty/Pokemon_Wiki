@@ -7,7 +7,6 @@ import { toggleMobileSearchbar } from 'store';
 import { Logo } from 'styles/Navbar';
 import { SearchBar } from './searchbar';
 
-
 export const NavbarMobile = () => {
   const isActive = useAppSelector((state) => state.toggleSearchbar.isActive);
   const dispatch = useAppDispatch();
@@ -16,10 +15,8 @@ export const NavbarMobile = () => {
     <>
       {isActive ? (
         <>
-          <IconButton
-            onClick={() => dispatch(toggleMobileSearchbar())}
-          >
-            <KeyboardBackspaceIcon color='primary'/>
+          <IconButton onClick={() => dispatch(toggleMobileSearchbar())}>
+            <KeyboardBackspaceIcon color="primary" />
           </IconButton>
           <SearchBar />
         </>

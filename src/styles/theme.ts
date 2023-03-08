@@ -6,7 +6,7 @@ export const Colors = {
   body_bg: '#001A38',
   darker_blue: '#00224E',
   dark_blue: '#003367',
-  standsOut: '#FAD61D'
+  standsOut: '#FAD61D',
 };
 
 export const theme = createTheme({
@@ -18,7 +18,13 @@ export const theme = createTheme({
       main: Colors.secondary,
     },
   },
-  components: {
-
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 690,
+      md: 900,
+      lg: 1299,
+      xl: 1536
+    }
   }
 });
