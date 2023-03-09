@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "POKEWIKI",
+  "name": "The wikipedia of pokemons based on pokeAPI",
   "icons": [
     {
       "src": "favicon.ico",
