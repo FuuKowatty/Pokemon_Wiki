@@ -15,8 +15,10 @@ export const NavbarMobile = () => {
     <>
       {isActive ? (
         <>
-          <IconButton onClick={() => dispatch(toggleMobileSearchbar())}>
-            <KeyboardBackspaceIcon color="primary" />
+          <IconButton onClick={() => dispatch(toggleMobileSearchbar())} 
+            edge='start' 
+          >
+            <KeyboardBackspaceIcon color="primary" fontSize='large'/>
           </IconButton>
           <SearchBar />
         </>

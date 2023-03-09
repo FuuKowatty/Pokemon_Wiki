@@ -31,7 +31,7 @@ export const BannerContent = styled(Box)(({ theme }) => ({
     padding: '15px 0',
     maxWidth: 250,
     alignItems: 'center',
-    gap: '10px'
+    gap: '10px',
   },
 }));
 
@@ -81,7 +81,7 @@ export const BannerDescription = styled(Typography)(({ theme }) => ({
     lineHeight: 1.15,
     letterSpacing: 1.15,
     padding: '0 20px',
-    textAlign: 'center'
+    textAlign: 'left',
   },
   [theme.breakpoints.down('sm')]: {
     padding: '15px 0',

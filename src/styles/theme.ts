@@ -24,7 +24,7 @@ export const theme = createTheme({
       sm: 690,
       md: 900,
       lg: 1299,
-      xl: 1536
-    }
-  }
+      xl: 1536,
+    },
+  },
 });

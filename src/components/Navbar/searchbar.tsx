@@ -7,7 +7,12 @@ export const SearchBar = () => {
   return (
     <>
       <Search component="form">
-        <IconButton color="secondary" type="submit">
+        <IconButton color="secondary" type="submit"
+          sx={{
+            minHeight: 0,
+            minWidth: 0,
+          }}
+        >
           <SearchIcon />
         </IconButton>
         <StyledInputBase placeholder="Search..." required />
@@ -15,12 +20,6 @@ export const SearchBar = () => {
           type="reset"
           aria-label="close searchbar"
           color="primary"
-          sx={{
-            position: 'absolute',
-            right: 10,
-            top: '50%',
-            transform: 'translateY(-50%)',
-          }}
         >
           <CloseIcon fontSize="small" color="secondary" />
         </IconButton>

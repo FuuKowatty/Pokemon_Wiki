@@ -17,14 +17,12 @@ export const Search = styled(Box)(() => ({
   justifyContent: 'space-between',
   background: Colors.primary,
   display: 'flex',
-  boxShadow: `inset 0 0 3px ${Colors.secondary}`,
   borderRadius: '20px',
 }));
 
 export const StyledInputBase = styled(InputBase)(() => ({
   color: Colors.secondary,
   width: '100%',
-  margin: 0,
 }));
 
 export const Logo = styled(Typography)(() => ({

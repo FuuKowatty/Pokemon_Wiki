@@ -18,14 +18,13 @@ export const Banner = () => {
     <BannerContainer>
       <BannerImage src={isMobile ? banner_mobile : banner} alt="banner-image" />
       <BannerContent>
-          <BannerTitle variant="h2">POKEMONS</BannerTitle>
-          <BannerDescription variant="subtitle1">
-            POKEWIKI is library of pokemons based on pokeAPI. It enable you
-            acces you to list of all pokemons, their specific info or some
-            curio.
-          </BannerDescription>
+        <BannerTitle variant="h2">POKEMONS</BannerTitle>
+        <BannerDescription variant="subtitle1">
+          POKEWIKI is library of pokemons based on pokeAPI. It enable you acces
+          you to list of all pokemons, their specific info or some curio.
+        </BannerDescription>
 
-          <BannerShopButton color="secondary">Get Started</BannerShopButton>
+        <BannerShopButton color="secondary">Get Started</BannerShopButton>
       </BannerContent>
     </BannerContainer>
   );
