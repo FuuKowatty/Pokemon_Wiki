@@ -23,8 +23,6 @@ export const NavbarMobile = () => {
       ) : (
         <>
           <IconButton
-            size="large"
-            edge="start"
             color="inherit"
             aria-label="open drawer"
           >
