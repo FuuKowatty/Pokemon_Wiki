@@ -3,28 +3,32 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
-import { toggleMobileSearchbar } from 'store';
+import { toggleMobileSearchbar, toggleMobileMenu } from 'store';
 import { Logo } from 'styles/Navbar';
 import { SearchBar } from './searchbar';
 
 export const NavbarMobile = () => {
-  const isActive = useAppSelector((state) => state.toggleSearchbar.isActive);
+  const isSearchbarActive = useAppSelector(
+    (state) => state.toggleSearchbar.isSearchbarActive,
+  );
   const dispatch = useAppDispatch();
 
   return (
     <>
-      {isActive ? (
+      {isSearchbarActive ? (
         <>
-          <IconButton onClick={() => dispatch(toggleMobileSearchbar())} 
-            edge='start' 
+          <IconButton
+            onClick={() => dispatch(toggleMobileSearchbar())}
+            edge="start"
           >
-            <KeyboardBackspaceIcon color="primary" fontSize='large'/>
+            <KeyboardBackspaceIcon color="primary" fontSize="large" />
           </IconButton>
           <SearchBar />
         </>
       ) : (
         <>
           <IconButton
+            onClick={() => dispatch(toggleMobileMenu())}
             color="inherit"
             aria-label="open drawer"
           >
