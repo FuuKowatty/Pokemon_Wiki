@@ -5,6 +5,7 @@ import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { toggleMobileSearchbar, toggleMobileMenu } from 'store';
 import { Logo } from 'styles/Navbar';
+import { AppDrawer } from 'components/Drawer';
 import { SearchBar } from './searchbar';
 
 export const NavbarMobile = () => {
@@ -15,6 +16,7 @@ export const NavbarMobile = () => {
 
   return (
     <>
+      <AppDrawer />
       {isSearchbarActive ? (
         <>
           <IconButton
