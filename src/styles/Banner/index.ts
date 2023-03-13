@@ -52,7 +52,7 @@ export const BannerImage = styled('img')(({ src, theme }) => ({
 export const BannerTitle = styled(Typography)(({ theme }) => ({
   '&::before': {
     content: '"THE WIKIPEDIA OF"',
-    fontSize: '24px',
+    fontSize: 24,
     color: Colors.standsOut,
     fontWeight: 'bold',
     display: 'block',
@@ -67,10 +67,10 @@ export const BannerTitle = styled(Typography)(({ theme }) => ({
   lineHeight: 1.25,
   fontFamily: 'Golos Text',
   [theme.breakpoints.down('lg')]: {
-    fontSize: '57px',
+    fontSize: 56,
   },
   [theme.breakpoints.down('md')]: {
-    fontSize: '42px',
+    fontSize: 42,
   },
 }));
 
@@ -98,10 +98,10 @@ export const BannerShopButton = styled(Button)(({ theme }) => ({
   padding: '20px 0px',
   color: Colors.primary,
   fontWeight: 'bold',
-  fontSize: '16px',
+  fontSize: 16,
   [theme.breakpoints.down('md')]: {
     maxWidth: '250px',
     padding: '15px 0px',
-    fontSize: '14px',
+    fontSize: 14,
   },
 }));

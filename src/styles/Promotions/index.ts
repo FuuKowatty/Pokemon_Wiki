@@ -18,7 +18,7 @@ export const PromotionsContainer = styled(Box)(({ theme }) => ({
 export const MessageText = styled(Typography)(({ theme }) => ({
   fontFamily: '"Montez", "cursive"',
   [theme.breakpoints.up('md')]: {
-    fontSize: '2.4rem',
+    fontSize: 34,
   },
   color: Colors.primary,
   fontSize: '1.2rem',
